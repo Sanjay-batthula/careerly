@@ -7,8 +7,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import {
   Brain,
   Target,
@@ -140,9 +138,9 @@ export default function DashboardPage() {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <CareerlyLogo size="sm" />
-          </Link>
+            <Link href="/">
+            <img src="/logo.png" alt="Careerly Logo" className="h-8 w-auto" />
+            </Link>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm">
               <Bell className="w-4 h-4" />
@@ -164,7 +162,6 @@ export default function DashboardPage() {
       </motion.header>
 
       <div className="relative overflow-hidden">
-        <FloatingElements />
 
         <div className="container mx-auto px-4 py-8">
           {/* Welcome Section */}

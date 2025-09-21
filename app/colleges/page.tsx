@@ -7,8 +7,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import { Search, MapPin, Calendar, ExternalLink, Filter, Star, Building } from "lucide-react"
 import Link from "next/link"
 import { fetchCollegeData, searchColleges, filterCollegesByType, type College } from "@/lib/college-data"
@@ -75,9 +73,9 @@ export default function CollegesPage() {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <CareerlyLogo size="sm" />
-          </Link>
+            <Link href="/">
+            <img src="/logo.png" alt="Careerly Logo" className="h-8 w-auto" />
+            </Link>
           <div className="flex items-center gap-4">
             <Link href="/dashboard">
               <Button variant="ghost">Dashboard</Button>
@@ -90,7 +88,6 @@ export default function CollegesPage() {
       </motion.header>
 
       <div className="relative overflow-hidden">
-        <FloatingElements />
 
         <div className="container mx-auto px-4 py-8">
           {/* Page Header */}

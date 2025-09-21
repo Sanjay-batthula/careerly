@@ -8,8 +8,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import { Eye, EyeOff, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
@@ -38,7 +36,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
       <div className="relative w-full max-w-md">
-        <FloatingElements />
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,7 +46,11 @@ export default function LoginPage() {
           <Card className="border-0 shadow-2xl bg-card/50 backdrop-blur-sm">
             <CardHeader className="text-center pb-8">
               <div className="flex justify-center mb-6">
-                <CareerlyLogo size="lg" />
+              <img
+                src="/logo.png"
+                alt="Careerly Logo"
+                className="h-12 w-12 rounded-full shadow-lg bg-white object-contain"
+              />
               </div>
               <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
               <CardDescription className="text-base">Sign in to your Careerly account</CardDescription>
