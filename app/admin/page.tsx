@@ -9,8 +9,6 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import {
   Brain,
   Database,
@@ -187,9 +185,9 @@ export default function AdminPage() {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <CareerlyLogo size="sm" />
-          </Link>
+            <Link href="/">
+            <img src="/logo.png" alt="Careerly Logo" className="h-8 w-auto" />
+            </Link>
           <div className="flex items-center gap-4">
             <Badge variant="secondary" className="bg-primary/10 text-primary">
               Admin Panel
@@ -208,7 +206,6 @@ export default function AdminPage() {
       </motion.header>
 
       <div className="relative overflow-hidden">
-        <FloatingElements />
 
         <div className="container mx-auto px-4 py-8">
           {/* Page Header */}

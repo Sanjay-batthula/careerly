@@ -7,8 +7,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import {
   MapPin,
   Calendar,
@@ -76,7 +74,7 @@ export default function CollegeDetailPage() {
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/">
-            <CareerlyLogo size="sm" />
+            <img src="/logo.png" alt="Careerly Logo" className="h-8 w-auto" />
           </Link>
           <div className="flex items-center gap-4">
             <Link href="/colleges">
@@ -90,7 +88,6 @@ export default function CollegeDetailPage() {
       </motion.header>
 
       <div className="relative overflow-hidden">
-        <FloatingElements />
 
         <div className="container mx-auto px-4 py-8">
           {/* College Header */}

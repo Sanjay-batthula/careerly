@@ -10,8 +10,6 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CareerlyLogo } from "@/components/careerly-logo"
-import { FloatingElements } from "@/components/floating-elements"
 import { ChevronLeft, ChevronRight, Brain, Target, BookOpen, Lightbulb } from "lucide-react"
 import Link from "next/link"
 
@@ -167,9 +165,9 @@ export default function AssessmentPage() {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <CareerlyLogo size="sm" />
-          </Link>
+            <Link href="/">
+            <img src="/logo.png" alt="Careerly Logo" className="h-10 w-auto" />
+            </Link>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">
               Step {currentStep + 1} of {assessmentSteps.length}
@@ -182,7 +180,6 @@ export default function AssessmentPage() {
       </motion.header>
 
       <div className="relative overflow-hidden">
-        <FloatingElements />
 
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto">
